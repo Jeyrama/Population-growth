@@ -32,3 +32,12 @@ Note:
 
 
 // Solution
+
+function nbYear(p0, percent, aug, p) {
+  let year = [];
+  for (let i = 1; p0 < p; i++) {
+      p0 = Math.floor(p0 + (p0 * (percent / 100) + aug));
+      year.push(i);
+  }
+  return year.length;
+}
